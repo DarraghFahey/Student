@@ -36,6 +36,6 @@ public class StudentTest {
     @Test
     public void testStudentWithInvalidEmailValues() {
         Exception e = assertThrows(IllegalArgumentException.class, ()->{new Student("", null);});
-        assertEquals("No Name entered", e.getMessage());
+        assertEquals("No Email entered", e.getMessage());
     }
 }
